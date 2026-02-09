@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Inventory - Roadmax Autos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-car"></i>
+                <h1>Roadmax Autos</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="inventory.html" class="active">Inventory</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="delivery.html">Delivery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button class="btn btn-login" id="loginBtn">Login</button>
+                <button class="btn btn-signup" id="signupBtn">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Vehicle Inventory</h2>
+            <p>Browse our extensive collection of premium vehicles available for sale</p>
+        </div>
+    </section>
+
+    <!-- Inventory Section -->
+    <section class="container">
+        <h2 class="section-title">Available Vehicles</h2>
+        <div class="filters">
+            <button class="filter-btn active">All Brands</button>
+            <button class="filter-btn">Toyota</button>
+            <button class="filter-btn">Honda</button>
+            <button class="filter-btn">Mercedes</button>
+            <button class="filter-btn">BMW</button>
+            <button class="filter-btn">Ford</button>
+        </div>
+        <div class="cars-grid">
+            <div class="car-card">
+                <div class="car-image" style="background-image: url('https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                <div class="car-details">
+                    <div class="car-brand">Toyota Camry</div>
+                    <div class="car-model">LE</div>
+                    <div class="car-year">Year: 2024</div>
+                    <div class="car-price">₦ 12,500,000</div>
+                    <div class="car-color">
+                        <span>Color:</span>
+                        <div class="color-swatch" style="background-color: #333;"></div>
+                        <span>Black</span>
+                    </div>
+                    <button class="btn btn-primary">Select Vehicle</button>
+                </div>
+            </div>
+            <div class="car-card">
+                <div class="car-image" style="background-image: url('https://images.unsplash.com/photo-1553440569-bcc63803a83d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                <div class="car-details">
+                    <div class="car-brand">Honda Accord</div>
+                    <div class="car-model">EX-L</div>
+                    <div class="car-year">Year: 2023</div>
+                    <div class="car-price">₦ 11,800,000</div>
+                    <div class="car-color">
+                        <span>Color:</span>
+                        <div class="color-swatch" style="background-color: #fff; border: 2px solid #ccc;"></div>
+                        <span>White</span>
+                    </div>
+                    <button class="btn btn-primary">Select Vehicle</button>
+                </div>
+            </div>
+            <div class="car-card">
+                <div class="car-image" style="background-image: url('https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                <div class="car-details">
+                    <div class="car-brand">Mercedes-Benz</div>
+                    <div class="car-model">C-Class</div>
+                    <div class="car-year">Year: 2025</div>
+                    <div class="car-price">₦ 25,000,000</div>
+                    <div class="car-color">
+                        <span>Color:</span>
+                        <div class="color-swatch" style="background-color: #1a3a5f;"></div>
+                        <span>Silver</span>
+                    </div>
+                    <button class="btn btn-primary">Select Vehicle</button>
+                </div>
+            </div>
+            <div class="car-card">
+                <div class="car-image" style="background-image: url('https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                <div class="car-details">
+                    <div class="car-brand">Ford Explorer</div>
+                    <div class="car-model">XLT</div>
+                    <div class="car-year">Year: 2022</div>
+                    <div class="car-price">₦ 18,500,000</div>
+                    <div class="car-color">
+                        <span>Color:</span>
+                        <div class="color-swatch" style="background-color: #e63946;"></div>
+                        <span>Red</span>
+                    </div>
+                    <button class="btn btn-primary">Select Vehicle</button>
+                </div>
+            </div>
+            <div class="car-card">
+                <div class="car-image" style="background-image: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                <div class="car-details">
+                    <div class="car-brand">BMW X5</div>
+                    <div class="car-model">xDrive40i</div>
+                    <div class="car-year">Year: 2024</div>
+                    <div class="car-price">₦ 22,000,000</div>
+                    <div class="car-color">
+                        <span>Color:</span>
+                        <div class="color-swatch" style="background-color: #000;"></div>
+                        <span>Midnight Black</span>
+                    </div>
+                    <button class="btn btn-primary">Select Vehicle</button>
+                </div>
+            </div>
+            <div class="car-card">
+                <div class="car-image" style="background-image: url('https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                <div class="car-details">
+                    <div class="car-brand">Lexus RX</div>
+                    <div class="car-model">350</div>
+                    <div class="car-year">Year: 2023</div>
+                    <div class="car-price">₦ 19,500,000</div>
+                    <div class="car-color">
+                        <span>Color:</span>
+                        <div class="color-swatch" style="background-color: #fff; border: 2px solid #ccc;"></div>
+                        <span>White Pearl</span>
+                    </div>
+                    <button class="btn btn-primary">Select Vehicle</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Roadmax Autos</h3>
+                    <p>Your trusted partner for premium vehicles and reliable interstate delivery services across Nigeria.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="inventory.html">Inventory</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                        <li><a href="delivery.html">Delivery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> No 34 Ajayi Crescent, Opposite Grandline Hotel, Abuja</p>
+                        <p><i class="fas fa-phone"></i> +234 800 123 4567</p>
+                        <p><i class="fas fa-envelope"></i> info@roadmaxautos.com</p>
+                        <p><i class="fas fa-clock"></i> Mon-Sat: 8:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Roadmax Autos. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Auth Modal -->
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Account Access</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-tabs">
+                    <button class="tab-btn active" data-tab="login">Login</button>
+                    <button class="tab-btn" data-tab="signup">Create Account</button>
+                </div>
+                
+                <div id="loginTab" class="tab-content active">
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="loginEmail">Email Address</label>
+                            <input type="email" id="loginEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="loginPassword">Password</label>
+                            <input type="password" id="loginPassword" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="rememberMe">
+                            <label for="rememberMe">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn-submit">Login</button>
+                    </form>
+                </div>
+                
+                <div id="signupTab" class="tab-content">
+                    <form id="signupForm">
+                        <div class="form-group">
+                            <label for="signupName">Full Name</label>
+                            <input type="text" id="signupName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signupEmail">Email Address</label>
+                            <input type="email" id="signupEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signupPhone">Phone Number</label>
+                            <input type="tel" id="signupPhone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signupPassword">Password</label>
+                            <input type="password" id="signupPassword" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" id="confirmPassword" required>
+                        </div>
+                        <button type="submit" class="btn-submit">Create Account</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/inventory.js"></script>
+</body>
+</html>
